@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Student Study Hub</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Hub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
+    <nav class="navbar">
+        <div class="logo">📚 Study Hub</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-<header>
-<h1>Student Study Hub</h1>
-<p>Learn Better. Grow Faster.</p>
+    <header class="hero">
+        <h1>Welcome to Student Study Hub</h1>
+        <p>Learn Better. Grow Faster.</p>
+    </header>
 
-<input type="text" id="search" placeholder="Search topics">
-<button onclick="searchTopic()">Search</button>
-</header>
+    <section class="interactive-box">
+        <h2>🔍 Topic Search Assistant</h2>
+        <p>Type a programming topic to check status!</p>
+        <div class="search-area">
+            <input type="text" id="searchInput" placeholder="e.g., If-Else, Loops, C...">
+            <button onclick="searchTopic()">Search Topic</button>
+        </div>
+        <h3 id="searchResult"></h3>
+    </section>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
